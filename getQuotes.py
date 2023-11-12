@@ -1,12 +1,6 @@
 import requests
-
-proxies = {
-  'http': 'http://192.168.77.180:44355',
-  'https': 'http://192.168.77.180:44355',
-}
-
 def get_quote():
-    response = requests.get('https://zenquotes.io/api/random', proxies=proxies)
+    response = requests.get('https://zenquotes.io/api/random')
     if response.status_code == 200:
         data = response.json()
         quote = data[0]['q']

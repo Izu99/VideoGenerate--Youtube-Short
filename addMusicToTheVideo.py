@@ -6,6 +6,7 @@ def get_random_video():
     video_folder = '../SampleVideos'  # The path to your video folder
     videos = [f for f in os.listdir(video_folder) if os.path.isfile(os.path.join(video_folder, f))]
     random_video = random.choice(videos)
+    # random_video = "22.mp4"
     video_path = os.path.join(video_folder, random_video)
 
     # Get the duration of the video in seconds
@@ -22,7 +23,7 @@ print(f"Duration in seconds: {duration}")
 video = VideoFileClip(video_path)
 
 # Load your audio
-audio = AudioFileClip('../SampleAudio/price-of-freedom-33106.mp3')
+audio = AudioFileClip('../SampleAudios/no2.mp3')
 
 # If the audio is longer than the video, trim the audio
 if audio.duration > video.duration:

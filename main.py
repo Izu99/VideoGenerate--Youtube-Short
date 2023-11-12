@@ -7,7 +7,7 @@ import addSpeechToVideo
 import deleteFiles
 from IPython.display import Video
 import time
-import automateUtube
+# import automateUtube
 
 # Record the start time
 start_time = time.time()
@@ -21,7 +21,7 @@ video_music = (
 print("****** Background Music Added ******")
 
 print("****** Getting Quote and Author From the API ******")
-quote, author = getQuotes.get_quote()  # get quote and author
+quote, author = "\"The greatest glory in living lies not in never falling. but in rising every time we fall.\"", "- Nelson Mandela"  # get quote and author
 
 print(f"{quote} - {author}")
 
@@ -45,10 +45,10 @@ print("****** Voice Added Successfully ******")
 # Display and play the video
 Video(final_video)
 
-print("****** File Is Uploading ******")
-author = author.replace("-","")
-video_title = automateUtube.main(author)
-print(author)
+# print("****** File Is Uploading ******")
+# author = author.replace("-","")
+# video_title = automateUtube.main(author)
+# print(author)
 
 print("****** Deleting Files ******")
 deleteFiles.delete_file()
