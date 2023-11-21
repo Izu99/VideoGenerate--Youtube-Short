@@ -9,7 +9,7 @@ from IPython.display import Video
 import time
 import automateUtube
 
-# Record the start time
+# Record the start time 
 start_time = time.time()
 
 print("Program Start", flush=True)
