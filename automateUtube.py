@@ -47,9 +47,10 @@ def main(author):
         body={
           "snippet": {
             "categoryId": "27",
-            "description": "This is a motivational video to inspire people and help them realize their potential.",
+            "description": f"In this video, I share a powerful quote by {author}, that will inspire you to make a positive impact in the world. This quote will motivate you to pursue your passion, overcome your challenges, and achieve your goals. Watch this video and discover how you can make a difference with one quote.",
             "title": f"How to Make a Difference: A Quote by {author}",
-            "tags": ["Motivation", "Inspiration", "Success", "Personal Growth", "Self-improvement", "Motivational Quotes","Quotes For Success", "Positive Thinking", "Self-Help", "Personal Development", "Lessons For Life", "SuccessFul Life", "Change Your Life", "Motivation For Life"]
+            "tags": ["motivational quote", "{author}", "make a difference", "inspirational video", "self improvement tips", "personal growth journey", "quotes for success", "positive mindset", "self-help advice", "personal development goals", "life lessons", "success mindset", "change your life with one quote", "motivation for life", "Life Changing", "Success Quote"]
+
           },
           "status": {
             "privacyStatus": "public"
