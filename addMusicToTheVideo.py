@@ -38,7 +38,7 @@ random_file_path = os.path.join(directory, random_file)
 audio = AudioFileClip(random_file_path)
 
 # decrease the volume to half
-audio = audio.volumex(0.2)
+audio = audio.volumex(0.1)
 
 # If the audio is longer than the video, trim the audio
 if audio.duration > video.duration:
