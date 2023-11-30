@@ -3,7 +3,7 @@ import os
 def delete_file():
     current_directory = os.path.dirname(os.path.realpath(__file__))  # Get the directory of the Python script
     extensions_to_delete = [".mp4", ".wav", ".mp3"]
-    files_to_exclude = ["final_video.mp4", "silence.wav", "utubeShort.exe"]
+    files_to_exclude = ["final_video.mp4", "silence.wav"]
 
     # List all files in the current directory
     files = os.listdir(current_directory)
